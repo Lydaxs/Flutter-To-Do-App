@@ -15,8 +15,8 @@ class MainApp extends StatelessWidget {
       title: "To Do List App",
       theme: ThemeData(
           colorScheme:
-              ColorScheme.fromSeed(seedColor: const Color.fromRGBO(250, 221, 225, 1)).copyWith(background: Colors.white),
-          textTheme: const TextTheme(bodyMedium: TextStyle(color: Color.fromRGBO(89, 13, 34, 1)))),
+              ColorScheme.fromSeed(seedColor: const Color.fromRGBO(151, 207, 138, 1)).copyWith(background: Colors.white),
+          textTheme: const TextTheme(bodyMedium: TextStyle(color: Color.fromRGBO(49, 94, 38, 1)))),
       home: const HomePage(),
     );
   }

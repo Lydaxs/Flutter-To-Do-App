@@ -98,14 +98,14 @@ class _HomeView extends State<HomePage> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text("My To Do List", style: TextStyle(color: Color.fromRGBO(201, 24, 74, 1))),
+            const Text("My To Do List"),
             Text(
               DateFormat("d MMMM yyyy").format(DateTime.now()),
-              style: const TextStyle(color: Color.fromRGBO(201, 24, 74, 1), fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
           ],
         ),
-        backgroundColor: const Color.fromRGBO(255, 135, 171, 1),
+        backgroundColor: const Color.fromRGBO(122, 159, 121, 1),
       ),
       body: ListView(
         children: [
@@ -189,7 +189,7 @@ class _HomeView extends State<HomePage> {
                               child: Container(
                                 width: double.infinity,
                                 decoration: BoxDecoration(
-                                  color: const Color.fromRGBO(255, 204, 213, 1),
+                                  color: const Color.fromRGBO(177, 221, 158, 1),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Padding(
@@ -198,14 +198,17 @@ class _HomeView extends State<HomePage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(todo),
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(date),
-                                          if (deadline!.isNotEmpty)
-                                            Text("Deadline: "
-                                                "$deadline")
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 15),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text("Dibuat: $date"),
+                                            if (deadline!.isNotEmpty)
+                                              Text("Deadline: "
+                                                  "$deadline")
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
@@ -277,7 +280,7 @@ class _HomeView extends State<HomePage> {
                               child: Container(
                                 width: double.infinity,
                                 decoration: BoxDecoration(
-                                  color: const Color.fromRGBO(149, 213, 178, 1),
+                                  color: const Color.fromRGBO(153, 187, 0, 1),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Padding(
@@ -286,14 +289,17 @@ class _HomeView extends State<HomePage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(todo),
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(date),
-                                          if (deadline!.isNotEmpty)
-                                            Text("Deadline: "
-                                                "$deadline")
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 15),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text("Dibuat: $date"),
+                                            if (deadline!.isNotEmpty)
+                                              Text("Deadline: "
+                                                  "$deadline")
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),

@@ -32,17 +32,8 @@ class _EditTodoView extends State<EditTodoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const Text("Add To Do", style: TextStyle(color: Color.fromRGBO(201, 24, 74, 1))),
-            Text(
-              DateFormat("d MMMM yyyy").format(DateTime.now()),
-              style: const TextStyle(color: Color.fromRGBO(201, 24, 74, 1), fontSize: 18),
-            ),
-          ],
-        ),
-        backgroundColor: const Color.fromRGBO(255, 135, 171, 1),
+        title: const Text("My To Do List"),
+        backgroundColor: const Color.fromRGBO(122, 159, 121, 1),
       ),
       body: Container(
         margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 35),
@@ -96,7 +87,7 @@ class _EditTodoView extends State<EditTodoPage> {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              backgroundColor: const Color.fromRGBO(255, 240, 243, 1)),
+                              backgroundColor: const Color.fromRGBO(151, 207, 138, 1)),
                           child: const Text("Save")),
                     )
                   ],

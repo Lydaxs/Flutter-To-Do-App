@@ -1,6 +1,6 @@
 # to_do_list
 
-A simple Flutter project.
+TODO List with Flutter
 
 ## Getting Started
 
